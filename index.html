@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web portofolio tailwind">
+    <meta name="keyword" content="tailwindcss, CSS, tailwind">
+    <meta name="author" content="supardi">
     <title>Web Portofolio</title>
     <link rel="stylesheet" type="text/css" href="output.css">
+    <link rel="stylesheet" href="https:use.fontawesome.com/releases/v5.7.0/css/all.css">
     <style>
-        .active{
+        .active {
             display: block;
-        }    
+        }
+
+        .gradient {
+            background-image: linear-gradient(to bottom right, #4c51bf, #702459);
+        }
     </style>
 </head>
 <body>
@@ -45,7 +53,81 @@
             </div>
         </nav>
     </section>
-    <section class="w-screen mx-auto py-4 bg-pink-500 md:bg-indigo-700 h-32">About Me</section>
+
+    <!-- ABOUT ME -->
+    <section class="w-screen mx-auto py-4 gradient">
+        <div class="px-16 py-8 text-center text-white">
+            <h1 class="w-full text-5xl font-bold">About Me</h1>
+            <div class="mb-4">
+                <div class="bg-pink-500 w-1/4 opacity-75 rounded h-1 mx-auto"></div>
+            </div>
+            <h2 class="text-3xl font-bold mb-2">
+                Hai, saya Supardi. Senang berjumpa dengan Anda.
+            </h2>
+            <h3 class="text-lg mb-2">
+                Saya seorang programmer dan juga analis, selain dapat membuat aplikasi menggunakan bahasa pemrograman, 
+                saya juga bisa merancang suatu sistem yang dibutuhkan user.
+            </h3>
+            <div class="w-full">
+                <div class="px-4 py-4">
+                    <img src="img/about-me.jpeg" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48">
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
+                <div class="p-4">
+                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
+                    <p class="text-gray-600 text-base mb-2">PHP</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">.NET</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">C++</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Java</p>
+                    <hr class="text-gray-600 mb-2">
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</hover:bg-blue-700>
+                </div>
+            </div>
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-pencil-ruler text-red-500 fa-5x mb-6"></i>
+                <div class="p-4">
+                    <p class="font-bold text-lg md:text-xl mb-6">Design</p>
+                    <p class="text-gray-600 text-base mb-2">CSS</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Logo</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Mobile</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">UI</p>
+                    <hr class="text-gray-600 mb-2">
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</hover:bg-blue-700>
+                </div>
+            </div>
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-database text-green-500 fa-5x mb-6"></i>
+                <div class="p-4">
+                    <p class="font-bold text-lg md:text-xl mb-6">Database</p>
+                    <p class="text-gray-600 text-base mb-2">MySQL</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">SQL Server</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">Oracle</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">PostgreSQL</p>
+                    <hr class="text-gray-600 mb-2">
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</hover:bg-blue-700>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="w-screen mx-auto py-4 bg-white h-32">Skill Framework</section>
     <section class="w-screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700">Recent Work</section>
     <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact Me</section>
